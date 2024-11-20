@@ -1,0 +1,141 @@
+/* CSS do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/ing/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para o botão do formulário */
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Menu hamburguer - telas pequenas */
+.menu-toggle {
+    display: none; /* Esconde o botão no modo desktop */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Oculta o menu no mobile (padrão) */
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: flex; /* Mostra o menu quando ativado */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Exibe o botão apenas na versão mobile */
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        border: none;
+        width: 100%;
+    }
+
+    .menu-toggle:hover {
+        background-color: #555;
+    }
+}
