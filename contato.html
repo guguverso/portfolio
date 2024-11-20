@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Menu do site -->
+    <header>
+        <nav>
+            <button class="menu-toggle">☰ Menu</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Entre em Contato</h1>
+        <p>Oi! Se está aqui é porque quer falar comigo! =D</p><br>
+        <!-- Formulário para contato --> 
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Qual é o teu nome?" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Deixa teu e-mail aqui" required>
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto" required>
+                <option value="">Selecione o assunto</option>
+                <option value="duvida">Dúvida</option>
+                <option value="feedback">Feedback</option>
+                <option value="projeto">Proposta de Projeto</option>
+                <option value="outro">Outro</option>
+            </select>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Agora capricha na mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <!-- Rodapé -->    
+    <footer>
+        <p>Desenvolvido por Luis Gustavo</p>
+    </footer>
+    <!-- Javascript para o menu -->
+    <script src="/js/menu.js"></script>
+</body>
+</html>
